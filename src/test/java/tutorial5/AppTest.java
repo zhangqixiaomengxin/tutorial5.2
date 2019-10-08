@@ -1,5 +1,7 @@
 package tutorial5;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -33,6 +35,9 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+    	Calc special = new Calc();
+    	int a=4,b=3;   	
+    	assertTrue(special.add(a, b)==7);
+    	assertTrue(special.substract(a, b)==1);
     }
 }
